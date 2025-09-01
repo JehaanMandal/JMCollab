@@ -14,12 +14,12 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen p-4 flex flex-col items-start md:items-center justify-start relative">
-      <div className="bg-black/50 backdrop-blur-3xl border border-cyan-400/40 rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl hover:shadow-3xl transition-shadow w-full max-w-md sm:max-w-lg md:max-w-4xl mx-auto md:mx-0 mt-4 md:mt-0">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-left md:text-center bg-gradient-to-r from-cyan-400 to-blue-400 text-transparent bg-clip-text animate-gradient-x">
+      <div className="bg-black/50 backdrop-blur-3xl border border-cyan-400/40 rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl hover:shadow-3xl transition-shadow w-full max-w-md sm:max-w-lg md:max-w-4xl mx-auto md:mx-0 mt-4 md:mt-0 flex flex-col items-center">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-center bg-gradient-to-r from-cyan-400 to-blue-400 text-transparent bg-clip-text animate-gradient-x">
           Welcome, {user?.name || user?.email || "User"}
         </h1>
 
-        <p className="text-gray-300 text-left md:text-center text-sm sm:text-base md:text-lg mt-4">
+        <p className="text-gray-300 text-center text-sm sm:text-base md:text-lg mt-4">
           Welcome to your all-in-one productivity platform, designed to help you
           effortlessly manage tasks, projects, and team collaborations in
           real-time. Keep track of deadlines, monitor progress, and stay updated
